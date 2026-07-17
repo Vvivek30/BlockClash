@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockClash</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="game-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Arcade Edition</p>
+            <h1>BlockClash</h1>
+          </div>
+          <button id="restartBtn" class="action-btn">Redo</button>
+        </div>
+
+        <div class="game-area">
+          <div id="board" class="board" aria-label="BlockClash game board"></div>
+          <div class="side-panel">
+            <div class="stats-card">
+              <h2>Stats</h2>
+              <div class="stats-list">
+                <div><span>Score</span><strong id="score">0</strong></div>
+                <div><span>Lines</span><strong id="lines">0</strong></div>
+                <div><span>Level</span><strong id="level">1</strong></div>
+                <div><span>Moves</span><strong id="moves">0</strong></div>
+              </div>
+            </div>
+
+            <div class="stats-card">
+              <h2>Next Piece</h2>
+              <div id="nextPiece" class="next-piece"></div>
+            </div>
+
+            <div class="stats-card">
+              <h2>Leaderboard</h2>
+              <ol id="leaderboard" class="leaderboard"></ol>
+            </div>
+          </div>
+        </div>
+
+        <p class="help-text">
+          Move with ← →, rotate with ↑, fast drop with ↓, hard drop with Space.
+        </p>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
